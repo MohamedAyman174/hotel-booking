@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reserve a LumaStay room with live nightly rate, nights, and total price calculation." />
+    <title>Reservation | LumaStay</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="reservation">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="categories.html" data-nav="categories">Categories</a></li>
+                <li><a href="rooms.html" data-nav="rooms">Rooms</a></li>
+                <li><a href="reservation.html" data-nav="reservation">Reservation</a></li>
+                <li><a href="checkout.html" data-nav="checkout">Checkout</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero compact">
+            <p class="eyebrow">Book your stay</p>
+            <h1>Reserve with live pricing before you submit.</h1>
+            <p>Select your room and dates to see nights, nightly rate, and total price update instantly.</p>
+        </section>
+
+        <section class="section booking-layout">
+            <form class="booking-form" id="reservationForm" novalidate="novalidate">
+                <div class="form-grid">
+                    <label>Full Name
+                        <input type="text" id="fullName" name="fullName" autocomplete="name" required="required" />
+                    </label>
+                    <label>Email
+                        <input type="email" id="email" name="email" autocomplete="email" required="required" />
+                    </label>
+                    <label>Phone Number
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" required="required" />
+                    </label>
+                    <label>Hotel Category
+                        <select id="hotelCategory" name="hotelCategory" required="required">
+                            <option value="">Select category</option>
+                            <option value="luxury">Luxury Hotels</option>
+                            <option value="business">Business Hotels</option>
+                            <option value="family">Family Hotels</option>
+                            <option value="budget">Budget Hotels</option>
+                            <option value="beach">Beach Resorts</option>
+                        </select>
+                    </label>
+                    <label>Room Type
+                        <select id="roomType" name="roomType" required="required">
+                            <option value="">Select room</option>
+                        </select>
+                    </label>
+                    <label>Check-in Date
+                        <input type="date" id="checkIn" name="checkIn" required="required" />
+                    </label>
+                    <label>Check-out Date
+                        <input type="date" id="checkOut" name="checkOut" required="required" />
+                    </label>
+                    <label>Number of Guests
+                        <input type="number" id="guests" name="guests" min="1" max="8" value="1" required="required" />
+                    </label>
+                </div>
+                <p class="form-message" id="reservationMessage" role="status" aria-live="polite"></p>
+                <button class="btn btn-primary form-submit" type="submit">Confirm Reservation</button>
+            </form>
+
+            <aside class="reservation-summary" aria-label="Reservation price summary">
+                <div>
+                    <p class="eyebrow">Your estimate</p>
+                    <h2 id="summaryRoom">Select a room</h2>
+                </div>
+                <dl>
+                    <div><dt>Price per night</dt><dd id="summaryRate">$0</dd></div>
+                    <div><dt>Number of nights</dt><dd id="summaryNights">0</dd></div>
+                    <div><dt>Guests</dt><dd id="summaryGuests">1</dd></div>
+                    <div class="total-line"><dt>Total price</dt><dd id="summaryTotal">$0</dd></div>
+                </dl>
+                <p class="summary-note">Totals are estimates for the selected room and dates. Taxes and special services can be added in a future backend version.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a><p>This project is a Tutor Marked Assignment (TMA). Premium hotel booking interface built with HTML, CSS, and JavaScript.</p></div>
+        <ul class="footer-links"><li><a href="categories.html">Categories</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="checkout.html">Checkout</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

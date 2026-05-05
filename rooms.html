@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Compare LumaStay room types with features, images, and nightly prices before making a reservation." />
+    <title>Rooms Details | LumaStay</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="rooms">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="categories.html" data-nav="categories">Categories</a></li>
+                <li><a href="rooms.html" data-nav="rooms">Rooms</a></li>
+                <li><a href="reservation.html" data-nav="reservation">Reservation</a></li>
+                <li><a href="checkout.html" data-nav="checkout">Checkout</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero compact">
+            <p class="eyebrow">Rooms and suites</p>
+            <h1>Compare room details before you reserve.</h1>
+            <p>Each room card includes the category, features, and nightly rate used by the reservation calculator.</p>
+        </section>
+
+        <section class="section featured-rooms" aria-labelledby="featuredRoomsTitle">
+            <div class="section-heading compact-heading">
+                <p class="eyebrow">Featured rooms</p>
+                <h2 id="featuredRoomsTitle">Guest favorites for faster decisions.</h2>
+            </div>
+            <div class="featured-strip">
+                <article class="featured-room">
+                    <span class="badge">Best Seller</span>
+                    <h3>Royal Skyline Suite</h3>
+                    <p>Luxury Hotels</p>
+                    <strong>$420 <span>/ night</span></strong>
+                </article>
+                <article class="featured-room">
+                    <span class="badge">Business Ready</span>
+                    <h3>Executive Work Suite</h3>
+                    <p>Business Hotels</p>
+                    <strong>$240 <span>/ night</span></strong>
+                </article>
+                <article class="featured-room">
+                    <span class="badge">Family Choice</span>
+                    <h3>Family Comfort Suite</h3>
+                    <p>Family Hotels</p>
+                    <strong>$260 <span>/ night</span></strong>
+                </article>
+                <article class="featured-room">
+                    <span class="badge">Sea View</span>
+                    <h3>Ocean Breeze Villa</h3>
+                    <p>Beach Resorts</p>
+                    <strong>$350 <span>/ night</span></strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="section room-toolbar" aria-label="Room filters">
+            <label class="room-search">Search rooms
+                <input type="search" id="roomSearch" placeholder="Search by name, feature, or badge" />
+            </label>
+            <button class="filter-chip active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="luxury">Luxury</button>
+            <button class="filter-chip" type="button" data-filter="business">Business</button>
+            <button class="filter-chip" type="button" data-filter="family">Family</button>
+            <button class="filter-chip" type="button" data-filter="budget">Budget</button>
+            <button class="filter-chip" type="button" data-filter="beach">Beach</button>
+        </section>
+
+        <section class="section rooms-grid" id="roomsGrid">
+            <article class="room-card" data-category="luxury">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Royal suite with elegant hotel bed" />
+                <div class="room-content">
+                    <span class="tag">Luxury Hotels</span>
+                    <h2>Royal Skyline Suite</h2>
+                    <p>A refined suite with skyline views, lounge seating, marble bathroom, and evening turndown service.</p>
+                    <ul class="feature-list"><li>King bed</li><li>Private lounge</li><li>Spa access</li><li>Breakfast included</li></ul>
+                    <div class="badge-row"><span class="badge">Best Seller</span><span class="badge badge-soft">City View</span></div>
+                    <div class="room-footer"><strong>$420 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=royal-suite">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="luxury">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Premium hotel room with soft lighting" />
+                <div class="room-content">
+                    <span class="tag">Luxury Hotels</span>
+                    <h2>Executive Grand Room</h2>
+                    <p>Premium comfort with designer finishes, concierge support, and a quiet corner layout.</p>
+                    <ul class="feature-list"><li>King bed</li><li>City view</li><li>Concierge</li><li>Smart TV</li></ul>
+                    <div class="badge-row"><span class="badge">Premium Pick</span></div>
+                    <div class="room-footer"><strong>$310 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=executive-grand">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="luxury">
+                <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Luxury penthouse bedroom with warm lighting" />
+                <div class="room-content">
+                    <span class="tag">Luxury Hotels</span>
+                    <h2>Signature Penthouse</h2>
+                    <p>A top-floor stay with panoramic windows, private dining space, and tailored guest service.</p>
+                    <ul class="feature-list"><li>King bed</li><li>Panoramic view</li><li>Private dining</li><li>Butler service</li></ul>
+                    <div class="badge-row"><span class="badge">Top Floor</span></div>
+                    <div class="room-footer"><strong>$520 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=signature-penthouse">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="business">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Business room with desk and bed" />
+                <div class="room-content">
+                    <span class="tag">Business Hotels</span>
+                    <h2>Business Focus Room</h2>
+                    <p>A calm room with ergonomic desk space, reliable Wi-Fi, and express check-in for short work trips.</p>
+                    <ul class="feature-list"><li>Queen bed</li><li>Work desk</li><li>Fast Wi-Fi</li><li>Late checkout</li></ul>
+                    <div class="badge-row"><span class="badge">Business Ready</span></div>
+                    <div class="room-footer"><strong>$190 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=business-focus">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="business">
+                <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Modern hotel room with office desk and seating area" />
+                <div class="room-content">
+                    <span class="tag">Business Hotels</span>
+                    <h2>Executive Work Suite</h2>
+                    <p>A suite designed for longer work stays with a separate seating zone and meeting-ready setup.</p>
+                    <ul class="feature-list"><li>King bed</li><li>Meeting table</li><li>Coffee station</li><li>Printer access</li></ul>
+                    <div class="badge-row"><span class="badge">Business Ready</span><span class="badge badge-soft">Quiet Zone</span></div>
+                    <div class="room-footer"><strong>$240 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=executive-work">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="family">
+                <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Family hotel room with multiple beds" />
+                <div class="room-content">
+                    <span class="tag">Family Hotels</span>
+                    <h2>Family Comfort Suite</h2>
+                    <p>A spacious suite with flexible beds, seating area, and practical storage for family holidays.</p>
+                    <ul class="feature-list"><li>Up to 5 guests</li><li>Two bedrooms</li><li>Mini fridge</li><li>Kids amenities</li></ul>
+                    <div class="badge-row"><span class="badge">Family Choice</span></div>
+                    <div class="room-footer"><strong>$260 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=family-comfort">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="family">
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Bright family suite with sofa and hotel beds" />
+                <div class="room-content">
+                    <span class="tag">Family Hotels</span>
+                    <h2>Connected Family Rooms</h2>
+                    <p>Two connected rooms for privacy and comfort, ideal for families traveling with older children.</p>
+                    <ul class="feature-list"><li>Up to 6 guests</li><li>Connecting door</li><li>Two bathrooms</li><li>Breakfast option</li></ul>
+                    <div class="badge-row"><span class="badge">Family Choice</span><span class="badge badge-soft">Extra Space</span></div>
+                    <div class="room-footer"><strong>$300 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=connected-family">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="family">
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Large hotel room with sofa bed for family stays" />
+                <div class="room-content">
+                    <span class="tag">Family Hotels</span>
+                    <h2>Junior Family Loft</h2>
+                    <p>A flexible loft-style room with a sofa bed, dining nook, and space for relaxed family evenings.</p>
+                    <ul class="feature-list"><li>Queen bed</li><li>Sofa bed</li><li>Dining nook</li><li>Baby cot on request</li></ul>
+                    <div class="badge-row"><span class="badge">Flexible Stay</span></div>
+                    <div class="room-footer"><strong>$220 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=junior-family-loft">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="budget">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Clean compact hotel bedroom" />
+                <div class="room-content">
+                    <span class="tag">Budget Hotels</span>
+                    <h2>Smart Essential Room</h2>
+                    <p>Simple, polished, and practical with everything needed for a comfortable overnight stay.</p>
+                    <ul class="feature-list"><li>Double bed</li><li>Air conditioning</li><li>Private bathroom</li><li>Wi-Fi</li></ul>
+                    <div class="badge-row"><span class="badge">Smart Value</span></div>
+                    <div class="room-footer"><strong>$95 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=smart-essential">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="budget">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Compact hotel room with neat bed and desk" />
+                <div class="room-content">
+                    <span class="tag">Budget Hotels</span>
+                    <h2>Urban Saver Room</h2>
+                    <p>A compact city room with clean finishes, quick access to transport, and a practical desk.</p>
+                    <ul class="feature-list"><li>Single or twin beds</li><li>Desk</li><li>Shower</li><li>City access</li></ul>
+                    <div class="badge-row"><span class="badge">Smart Value</span><span class="badge badge-soft">City Base</span></div>
+                    <div class="room-footer"><strong>$80 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=urban-saver">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="budget">
+                <img src="https://images.unsplash.com/photo-1631049552240-59c37f38802b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Minimal hotel room with modern bathroom view" />
+                <div class="room-content">
+                    <span class="tag">Budget Hotels</span>
+                    <h2>Compact Plus Room</h2>
+                    <p>An upgraded budget option with extra storage, a brighter layout, and simple daily comfort.</p>
+                    <ul class="feature-list"><li>Double bed</li><li>Extra storage</li><li>Rain shower</li><li>Wi-Fi</li></ul>
+                    <div class="badge-row"><span class="badge">Clean Comfort</span></div>
+                    <div class="room-footer"><strong>$115 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=compact-plus">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Resort room overlooking water" />
+                <div class="room-content">
+                    <span class="tag">Beach Resorts</span>
+                    <h2>Ocean Breeze Villa</h2>
+                    <p>A bright resort villa with terrace seating, ocean views, and direct access to leisure facilities.</p>
+                    <ul class="feature-list"><li>Sea view</li><li>Private terrace</li><li>Pool access</li><li>Resort breakfast</li></ul>
+                    <div class="badge-row"><span class="badge">Sea View</span></div>
+                    <div class="room-footer"><strong>$350 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=ocean-breeze">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Beach resort room with balcony and water view" />
+                <div class="room-content">
+                    <span class="tag">Beach Resorts</span>
+                    <h2>Lagoon Terrace Room</h2>
+                    <p>A relaxed resort room with lagoon-facing balcony, soft coastal interiors, and pool proximity.</p>
+                    <ul class="feature-list"><li>Lagoon view</li><li>Balcony</li><li>Pool nearby</li><li>Breakfast included</li></ul>
+                    <div class="badge-row"><span class="badge">Sea View</span><span class="badge badge-soft">Resort Favorite</span></div>
+                    <div class="room-footer"><strong>$285 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=lagoon-terrace">Reserve</a></div>
+                </div>
+            </article>
+            <article class="room-card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Tropical beach resort suite with outdoor seating" />
+                <div class="room-content">
+                    <span class="tag">Beach Resorts</span>
+                    <h2>Sunset Resort Suite</h2>
+                    <p>A generous suite made for slow evenings, outdoor seating, and sunset views over the shoreline.</p>
+                    <ul class="feature-list"><li>Sunset view</li><li>Outdoor seating</li><li>King bed</li><li>Resort shuttle</li></ul>
+                    <div class="badge-row"><span class="badge">Sunset View</span></div>
+                    <div class="room-footer"><strong>$390 <span>/ night</span></strong><a class="btn btn-small reserve-link" href="reservation.html?room=sunset-resort">Reserve</a></div>
+                </div>
+            </article>
+            <div class="empty-state" id="roomEmptyState" role="status" aria-live="polite">
+                <h2>No rooms found</h2>
+                <p>Choose another category to see available rooms.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a><p>This project is a Tutor Marked Assignment (TMA). Premium hotel booking interface built with HTML, CSS, and JavaScript.</p></div>
+        <ul class="footer-links"><li><a href="categories.html">Categories</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="checkout.html">Checkout</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

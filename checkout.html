@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Review your LumaStay booking summary and choose a payment method before confirming." />
+    <title>Checkout | LumaStay</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="checkout">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="categories.html" data-nav="categories">Categories</a></li>
+                <li><a href="rooms.html" data-nav="rooms">Rooms</a></li>
+                <li><a href="reservation.html" data-nav="reservation">Reservation</a></li>
+                <li><a href="checkout.html" data-nav="checkout">Checkout</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero compact">
+            <p class="eyebrow">Checkout</p>
+            <h1>Review your booking before confirmation.</h1>
+            <p>Check the stay details, guest information, and preferred payment method. No real payment is processed.</p>
+        </section>
+
+        <section class="section checkout-layout" id="checkoutContent">
+            <div class="checkout-panel">
+                <div class="section-heading compact-heading">
+                    <p class="eyebrow">Booking summary</p>
+                    <h2 id="checkoutRoom">Selected room</h2>
+                </div>
+                <dl class="summary-list">
+                    <div><dt>Hotel category</dt><dd id="checkoutCategory">-</dd></div>
+                    <div><dt>Check-in date</dt><dd id="checkoutCheckIn">-</dd></div>
+                    <div><dt>Check-out date</dt><dd id="checkoutCheckOut">-</dd></div>
+                    <div><dt>Number of nights</dt><dd id="checkoutNights">0</dd></div>
+                    <div><dt>Number of guests</dt><dd id="checkoutGuests">0</dd></div>
+                    <div><dt>Price per night</dt><dd id="checkoutRate">$0</dd></div>
+                    <div class="total-line"><dt>Total price</dt><dd id="checkoutTotal">$0</dd></div>
+                </dl>
+            </div>
+
+            <aside class="checkout-panel">
+                <div class="section-heading compact-heading">
+                    <p class="eyebrow">Customer details</p>
+                    <h2 id="checkoutName">Guest name</h2>
+                </div>
+                <dl class="summary-list customer-summary">
+                    <div><dt>Email</dt><dd id="checkoutEmail">-</dd></div>
+                    <div><dt>Phone</dt><dd id="checkoutPhone">-</dd></div>
+                </dl>
+
+                <form class="payment-form" id="checkoutForm" novalidate="novalidate">
+                    <fieldset>
+                        <legend>Payment method</legend>
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Credit/Debit Card" checked="checked" />
+                            <span><strong>Credit/Debit Card</strong><small>Mock payment method for the assignment flow.</small></span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Pay at Hotel" />
+                            <span><strong>Pay at Hotel</strong><small>Reserve now and pay when you arrive.</small></span>
+                        </label>
+                    </fieldset>
+                    <p class="form-message" id="checkoutMessage" role="status" aria-live="polite"></p>
+                    <button class="btn btn-primary form-submit" type="submit">Confirm Booking</button>
+                    <a class="btn btn-secondary form-submit" href="reservation.html">Edit Reservation</a>
+                </form>
+            </aside>
+        </section>
+
+        <section class="section fallback-panel" id="checkoutFallback" hidden="hidden">
+            <h2>No booking data found.</h2>
+            <p>Start a new booking from the rooms page, then complete the reservation form to reach checkout.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="rooms.html">Browse Rooms</a>
+                <a class="btn btn-secondary" href="reservation.html">Start New Booking</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a><p>This project is a Tutor Marked Assignment (TMA). Premium hotel booking interface built with HTML, CSS, and JavaScript.</p></div>
+        <ul class="footer-links"><li><a href="categories.html">Categories</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="checkout.html">Checkout</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

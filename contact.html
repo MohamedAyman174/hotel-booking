@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact LumaStay for hotel booking support, reservation questions, and travel assistance." />
+    <title>Contact | LumaStay</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="categories.html" data-nav="categories">Categories</a></li>
+                <li><a href="rooms.html" data-nav="rooms">Rooms</a></li>
+                <li><a href="reservation.html" data-nav="reservation">Reservation</a></li>
+                <li><a href="checkout.html" data-nav="checkout">Checkout</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero compact">
+            <p class="eyebrow">Contact information</p>
+            <h1>Project and student contact details.</h1>
+            <p>Use the details below for assignment identification, course information, and contact reference.</p>
+        </section>
+
+        <section class="section contact-layout">
+            <div class="contact-info">
+                <article class="contact-card">
+                    <h2>Student details</h2>
+                    <dl class="contact-list">
+                        <div><dt>Name</dt><dd>Mohammed Ayman Youssef</dd></div>
+                        <div><dt>Student ID</dt><dd>23512038</dd></div>
+                        <div><dt>Course</dt><dd>TMA TT284</dd></div>
+                    </dl>
+                </article>
+                <article class="contact-card">
+                    <h2>Contact details</h2>
+                    <dl class="contact-list">
+                        <div><dt>Email</dt><dd><a href="mailto:mohammedayman23512038@gmail.com">mohammedayman23512038@gmail.com</a></dd></div>
+                        <div><dt>Phone</dt><dd><a href="tel:+201069285277">+20 106 928 5277</a></dd></div>
+                        <div><dt>Working Hours</dt><dd>Sunday to Thursday, 9:00 AM - 7:00 PM</dd></div>
+                    </dl>
+                </article>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate="novalidate">
+                <label>Your Name
+                    <input type="text" id="contactName" required="required" />
+                </label>
+                <label>Email Address
+                    <input type="email" id="contactEmail" required="required" />
+                </label>
+                <label>Message
+                    <textarea id="contactMessage" rows="6" required="required"></textarea>
+                </label>
+                <p class="form-message" id="contactStatus" role="status" aria-live="polite"></p>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a><p>This project is a Tutor Marked Assignment (TMA). Premium hotel booking interface built with HTML, CSS, and JavaScript.</p></div>
+        <ul class="footer-links"><li><a href="categories.html">Categories</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="checkout.html">Checkout</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

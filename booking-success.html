@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your LumaStay booking has been completed successfully." />
+    <title>Booking Completed | LumaStay</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="success">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="categories.html" data-nav="categories">Categories</a></li>
+                <li><a href="rooms.html" data-nav="rooms">Rooms</a></li>
+                <li><a href="reservation.html" data-nav="reservation">Reservation</a></li>
+                <li><a href="checkout.html" data-nav="checkout">Checkout</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="success-hero" id="successContent">
+            <div class="success-card">
+                <span class="success-mark" aria-hidden="true">&#10003;</span>
+                <p class="eyebrow">Booking completed</p>
+                <h1>Your booking has been completed successfully.</h1>
+                <p>Your reference number is <strong id="successReference">-</strong>. Keep it for check-in support and booking questions.</p>
+                <dl class="summary-list success-summary">
+                    <div><dt>Room</dt><dd id="successRoom">-</dd></div>
+                    <div><dt>Hotel category</dt><dd id="successCategory">-</dd></div>
+                    <div><dt>Dates</dt><dd id="successDates">-</dd></div>
+                    <div><dt>Nights</dt><dd id="successNights">0</dd></div>
+                    <div><dt>Guests</dt><dd id="successGuests">0</dd></div>
+                    <div><dt>Payment method</dt><dd id="successPayment">-</dd></div>
+                    <div class="total-line"><dt>Total price</dt><dd id="successTotal">$0</dd></div>
+                </dl>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="index.html">Back to Home</a>
+                    <a class="btn btn-secondary" href="rooms.html">Browse More Rooms</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fallback-panel" id="successFallback" hidden="hidden">
+            <h2>No completed booking found.</h2>
+            <p>Complete checkout first, or start a new booking from the rooms page.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="rooms.html">Browse Rooms</a>
+                <a class="btn btn-secondary" href="reservation.html">Start New Booking</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">LS</span><span>LumaStay</span></a><p>This project is a Tutor Marked Assignment (TMA). Premium hotel booking interface built with HTML, CSS, and JavaScript.</p></div>
+        <ul class="footer-links"><li><a href="categories.html">Categories</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="checkout.html">Checkout</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
